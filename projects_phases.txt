@@ -1,0 +1,302 @@
+COMPREHENSIVE AI ENGINEERING PORTFOLIO
+
+TRACK 1 — AUTONOMOUS AI AGENTS & BUSINESS AUTOMATION
+======================================================
+
+PROJECT 1.1 — Autonomous Multi-Agent Outbound Sales & Closer Swarm
+
+Build an autonomous multi-agent business acquisition system that discovers
+potential customers, researches and verifies them, analyzes their business
+context, generates personalized outreach, manages multi-step conversations,
+handles objections, and learns from campaign performance. The system should
+demonstrate agent orchestration, shared state, tool calling, external APIs,
+structured outputs, retries, human intervention, and a feedback loop that
+continuously improves the system's performance.
+
+
+PROJECT 1.2 — End-to-End Lead Management & CRM Automation Engine
+
+Build an automated lead-processing platform that receives leads from multiple
+sources, enriches and validates their information, uses an LLM to score
+quality and buying intent, generates a structured sales brief, assigns leads
+to appropriate sales representatives, synchronizes them with a CRM, sends
+notifications, and triggers personalized nurture sequences. The project
+should demonstrate webhook processing, API integrations, workflow automation,
+LLM classification, structured JSON outputs, CRM synchronization, and
+event-driven business logic.
+
+
+PROJECT 1.3 — Autonomous Email Attachment & Document Filing Agent
+
+Build a zero-touch document management agent that monitors incoming email,
+identifies relevant attachments, extracts information from PDFs and images,
+classifies documents, normalizes their metadata, generates standardized
+filenames, and automatically files them into the appropriate cloud storage
+locations. Ambiguous documents should be routed to a human review queue.
+The project should demonstrate email APIs, document/OCR processing, LLM
+extraction, confidence scoring, structured data pipelines, cloud storage
+integration, and human-in-the-loop workflows.
+
+
+TRACK 2 — FULL-STACK AI APPLICATIONS & SaaS
+============================================
+
+PROJECT 2.1 — Multi-Tenant AI Business Dashboard & Design Studio
+
+Build a production-style multi-tenant SaaS dashboard where organizations can
+manage users, roles, company knowledge, brand guidelines, assets, and AI
+workflows. Users should be able to describe what they want in natural
+language and have the AI assemble the necessary context, call external
+creative/design tools, and return an editable result. The project should
+demonstrate authentication, RBAC, multi-tenancy, persistent organizational
+knowledge, AI orchestration, external tool integration, and modern full-stack
+architecture.
+
+
+PROJECT 2.2 — Client-Facing AI Assistant with Live Tool Calling
+
+Build a production-ready conversational AI application with a responsive
+streaming chat interface, persistent multi-turn conversations, configurable
+system instructions, and real tool calling. The assistant should be capable
+of querying databases and external APIs, performing actions, handling tool
+failures, retrying requests, respecting rate limits, and explaining results
+to the user. The project should demonstrate LLM APIs, streaming, function
+calling, conversation state, backend orchestration, API security, and
+real-time application design.
+
+
+PROJECT 2.3 — Production Dual-Layer AI Web Application
+
+Build a complete web product in which AI is both part of the development
+workflow and a real feature of the finished application. The application
+should contain a conventional full-stack product layer and an embedded AI
+intelligence layer capable of content generation, document processing,
+business reasoning, and workflow automation. The project should demonstrate
+secure API architecture, authentication, database design, rate limiting,
+server-side AI integration, deployment, observability, documentation, and
+production engineering.
+
+
+TRACK 3 — ENTERPRISE WORKFLOW AUTOMATION & INTEGRATIONS
+=========================================================
+
+PROJECT 3.1 — ERP AI Agent with Human Approval Gatekeeper
+
+Build an AI agent that can interact with an ERP system to answer business
+questions, analyze sales, inventory, accounting, CRM, and HR information,
+generate reports, detect anomalies, and propose operational actions. Any
+sensitive database mutation must pass through a human approval workflow before
+being executed. The project should demonstrate enterprise API integration,
+agentic reasoning, permissions, tool calling, database operations,
+background jobs, audit trails, role-based access control, and safe
+human-in-the-loop automation.
+
+
+PROJECT 3.2 — Cloud Spreadsheet Operations Tracker & AI Copilot
+
+Build a cloud-native operational tracking system around an online spreadsheet
+and enterprise workflow platform. The system should automatically track
+statuses, calculate metrics, detect duplicates, send reminders, escalate
+overdue work, and provide a natural-language interface for asking questions
+about operational data. The project should demonstrate cloud automation,
+spreadsheet APIs, serverless workflows, scripting, LLM integration,
+notifications, scheduled jobs, and enterprise productivity integrations.
+
+
+PROJECT 3.3 — Natural-Language Spreadsheet Automation Connector
+
+Build a natural-language connector that allows users to describe spreadsheet
+operations conversationally. The system should understand raw unstructured
+data, infer the target spreadsheet schema, normalize values, validate the
+data, and execute safe batch updates through the spreadsheet API. The
+project should demonstrate LLM-to-tool translation, schema reasoning,
+structured outputs, OAuth, API integration, validation, batch operations,
+and safe programmatic data modification.
+
+
+TRACK 4 — AI DEVELOPER TOOLING, ORCHESTRATION & SWARMS
+=======================================================
+
+PROJECT 4.1 — Multi-Session AI Coding Agent Orchestration Console
+
+Build a centralized control plane for managing multiple concurrent AI coding
+agent sessions. The system should launch and supervise independent CLI agent
+processes, capture their output, detect when they require user interaction,
+send notifications, accept remote responses, and provide a web-based
+terminal interface for monitoring and controlling sessions. The project
+should demonstrate process management, WebSockets, terminal streaming,
+event-driven architecture, session management, remote notifications,
+authentication, secrets isolation, and agent infrastructure.
+
+
+PROJECT 4.2 — Multi-Client Agent Swarm & Token Optimization Platform
+
+Build an architecture for running AI agents across multiple independent
+software projects or client workloads while minimizing unnecessary context
+consumption. Each client should have isolated project rules, knowledge,
+tools, configuration, and Git workspaces. A leader agent should delegate work
+to specialized workers, collect results, run automated verification, and
+require successful tests and checks before work is considered complete. The
+project should demonstrate hierarchical agents, Git worktrees, isolation,
+context management, token optimization, automated verification, parallel
+execution, and orchestration.
+
+
+PROJECT 4.3 — AI-Native Developer Environment & Agent Optimization Framework
+
+Build a developer environment and benchmarking framework designed around
+high-efficiency AI-assisted software development. Compare different operating
+system, terminal, filesystem, shell, and tooling configurations; provide
+fast navigation and search workflows; integrate local development tools with
+AI agents; and establish practical protocols for context management, token
+budgets, testing, debugging, and agentic refactoring. The project should
+demonstrate developer tooling, CLI engineering, environment automation,
+benchmarking, MCP/tool development, and AI-assisted engineering workflows.
+
+
+TRACK 5 — AI MEDIA, CONTENT & VIDEO AUTOMATION
+==============================================
+
+PROJECT 5.1 — Automated Sports Short-Form Video Production Pipeline
+
+Build an end-to-end content production pipeline that turns a topic or event
+into a finished short-form sports video. The system should generate a
+retention-focused script, break it into scenes, generate or obtain narration,
+match appropriate visual assets, construct the video timeline, generate
+dynamic captions, add sound effects and motion effects, render the final
+video, and optionally prepare it for publishing. The project should
+demonstrate LLM content generation, media processing, audio synchronization,
+asset management, FFmpeg automation, caption generation, and automated
+quality control.
+
+
+PROJECT 5.2 — High-Volume AI Cinematic Video Pipeline
+
+Build a production pipeline capable of generating and processing large
+volumes of short cinematic videos. The system should maintain consistent
+characters and visual references, use AI-assisted prompt refinement,
+automatically process generated footage with FFmpeg, normalize video and
+audio, assemble scenes, generate subtitles, and run automated quality checks
+for visual artifacts, identity drift, broken frames, and synchronization
+problems. The project should demonstrate AI media generation, prompt
+optimization, programmatic video processing, batch processing, QC
+automation, and production pipelines.
+
+
+PROJECT 5.3 — Multi-Brand AI Marketing Director & Content Engine
+
+Build an AI marketing system capable of managing multiple independent brands.
+Each brand should have isolated knowledge, audience definitions, visual
+guidelines, tone, goals, and historical performance data. The system should
+analyze social-media and advertising metrics, generate content calendars,
+hooks, captions, campaign ideas, filming plans, visual concepts, and
+performance reports, while recommending changes based on observed results.
+The project should demonstrate multi-tenant AI context, marketing analytics,
+content generation, social APIs, creative tooling, scheduled automation,
+and data-driven decision making.
+
+
+TRACK 6 — AI DESIGN SYSTEMS, WORKSPACE OPERATIONS & EDUCATION
+==============================================================
+
+PROJECT 6.1 — Brand Design System as Code
+
+Build a machine-readable design system that converts existing brand
+guidelines into reusable software primitives. Extract colors, typography,
+spacing, component rules, and other visual constraints; encode them as design
+tokens; and build a reusable component library and page templates that
+strictly consume those tokens. The project should demonstrate design-system
+engineering, token architecture, React components, CSS architecture,
+automated extraction, documentation, and LLM-friendly design specifications.
+
+
+PROJECT 6.2 — Multi-Company AI Executive Assistant & Workspace
+
+Build an AI executive assistant capable of operating across multiple
+businesses while keeping each company's knowledge, tools, credentials,
+workflows, and context isolated. The assistant should handle tasks such as
+email triage, proposal generation, CRM updates, operational reporting,
+calendar/workflow tasks, and daily executive briefings. The project should
+demonstrate persistent organizational context, tool integrations, scheduled
+automation, structured skills/workflows, permissions, multi-company
+isolation, and autonomous business operations.
+
+
+PROJECT 6.3 — AI Engineering Masterclass Production System
+
+Create a complete educational production system for teaching AI engineering
+to developers and founders. Build the curriculum, practical exercises,
+starter repositories, demonstrations, technical walkthroughs, reusable
+prompt/tooling references, and production-quality video lessons. The course
+should teach LLM architecture, context engineering, structured outputs,
+tool/function calling, agents, MCP, full-stack AI applications, evaluation,
+deployment, and production quality control.
+
+
+========================================================
+PORTFOLIO-WIDE ENGINEERING REQUIREMENTS
+========================================================
+
+Across the projects, emphasize:
+
+- LLM API integration
+- Model/provider abstraction
+- Prompt and context engineering
+- Structured outputs
+- Function/tool calling
+- Agent orchestration
+- Multi-agent systems
+- Persistent agent state
+- RAG and knowledge bases where appropriate
+- Human-in-the-loop approval
+- API integrations
+- Webhooks and event-driven architecture
+- Background jobs and queues
+- Database-backed state
+- Authentication and RBAC
+- Multi-tenancy
+- Secrets management
+- Rate limiting and retries
+- Observability and logging
+- Automated testing
+- Evaluation and quality-control loops
+- Failure recovery
+- Security
+- Cloud deployment
+- CI/CD
+- Documentation
+- Reusable components and abstractions
+- Cost and token optimization
+- Model/provider independence
+
+
+CORE PORTFOLIO POSITIONING
+===========================
+
+The overall portfolio demonstrates the ability to build AI systems that
+connect intelligent models to real software, databases, APIs, business
+processes, developer environments, media pipelines, and human approval
+systems.
+
+The goal is not simply to demonstrate that an LLM can generate text.
+
+The goal is to demonstrate that I can engineer complete AI-powered systems
+that:
+
+    PERCEIVE
+       ↓
+    REASON
+       ↓
+    USE TOOLS
+       ↓
+    ACCESS DATA
+       ↓
+    TAKE ACTION
+       ↓
+    VERIFY RESULTS
+       ↓
+    INVOLVE HUMANS WHEN NECESSARY
+       ↓
+    LEARN FROM OUTCOMES
+       ↓
+    OPERATE RELIABLY IN PRODUCTION

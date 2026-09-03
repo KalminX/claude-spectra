@@ -1,0 +1,100 @@
+[
+  {
+    "id": "lead_sim_001",
+    "company_name": "Apex Rapid Plumbing & Rooter [Simulated]",
+    "owner_name": "Marcus Vance",
+    "niche": "Plumbing",
+    "city": "Dallas",
+    "state": "TX",
+    "phone": "+1-555-0182",
+    "email": "marcus@apex-rapid-plumbing.simulated.test",
+    "website": "https://apex-rapid-plumbing.simulated.test",
+    "has_24_7_service_claim": true,
+    "reviews": [
+      {
+        "author": "Sarah J.",
+        "rating": 1,
+        "text": "Called on a Sunday evening with a burst pipe flooding our kitchen. Kept ringing and eventually went to a generic voicemail. Ended up calling another 24/7 company that answered right away.",
+        "date": "2026-08-14",
+        "mentions_missed_call": true
+      },
+      {
+        "author": "David M.",
+        "rating": 5,
+        "text": "Marcus did great work fixing our water heater once he got here. Solid pricing.",
+        "date": "2026-07-20",
+        "mentions_missed_call": false
+      }
+    ]
+  },
+  {
+    "id": "lead_sim_002",
+    "company_name": "BreezeAir 24/7 HVAC Solutions [Simulated]",
+    "owner_name": "Tyler Ross",
+    "niche": "HVAC",
+    "city": "Phoenix",
+    "state": "AZ",
+    "phone": "+1-555-0191",
+    "email": "tross@breezeair-phx.simulated.test",
+    "website": "https://breezeair-phx.simulated.test",
+    "has_24_7_service_claim": true,
+    "reviews": [
+      {
+        "author": "Robert C.",
+        "rating": 1,
+        "text": "It was 108 degrees on Saturday when our compressor died. I called 3 times between 2pm and 5pm. Nobody picked up and the voicemail was full. Lost our business forever.",
+        "date": "2026-08-22",
+        "mentions_missed_call": true
+      },
+      {
+        "author": "Elena G.",
+        "rating": 4,
+        "text": "Technicians are polite, but getting through to their office on weekends is near impossible.",
+        "date": "2026-08-01",
+        "mentions_missed_call": true
+      }
+    ]
+  },
+  {
+    "id": "lead_sim_003",
+    "company_name": "Sunburst Roofing & Restoration [Simulated Test - Defunct]",
+    "owner_name": "Jack Callahan",
+    "niche": "Roofing",
+    "city": "Orlando",
+    "state": "FL",
+    "phone": "+1-555-0122",
+    "email": "invalid-bounce@sunburst-roofing.simulated.test",
+    "website": "https://sunburst-roofing-defunct.simulated.test",
+    "has_24_7_service_claim": false,
+    "reviews": [
+      {
+        "author": "Mark S.",
+        "rating": 2,
+        "text": "Company seems inactive. Phone disconnected.",
+        "date": "2026-06-11",
+        "mentions_missed_call": false
+      }
+    ]
+  },
+  {
+    "id": "lead_sim_004",
+    "company_name": "MileHigh Electric & Solar [Simulated]",
+    "owner_name": "Greg Novak",
+    "niche": "Electrical",
+    "city": "Denver",
+    "state": "CO",
+    "phone": "+1-555-0144",
+    "email": "greg@milehigh-electric.simulated.test",
+    "website": "https://milehigh-electric.simulated.test",
+    "has_24_7_service_claim": true,
+    "reviews": [
+      {
+        "author": "Amanda W.",
+        "rating": 1,
+        "text": "Main electrical breaker tripped during a storm. Called their after-hours emergency line and nobody answered until Monday morning.",
+        "date": "2026-08-29",
+        "mentions_missed_call": true
+      }
+    ]
+  }
+]

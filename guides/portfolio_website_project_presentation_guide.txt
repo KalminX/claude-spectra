@@ -1,0 +1,388 @@
+================================================================================
+PORTFOLIO WEBSITE SHOWCASE GUIDE: CLAUDE AI & AGENTIC SYSTEMS
+How to Present Each of the 18 Projects for Maximum Client Conversion
+================================================================================
+
+This guide outlines the exact visual layout, interactive demo concepts, case 
+study structure, business metrics, and code showcase strategy for presenting all 
+18 projects on your personal developer/agency portfolio website.
+
+--------------------------------------------------------------------------------
+PORTFOLIO HOMEPAGE ARCHITECTURE & FILTERING STRUCTURE
+--------------------------------------------------------------------------------
+
+1. HERO SECTION
+   - Headline: "Full-Stack AI Engineer & Autonomous Agent Architect"
+   - Subhead: "I build production-grade Claude agent swarms, enterprise MCP workflows, and AI SaaS applications that eliminate manual operations."
+   - Primary CTA: "Explore Case Studies" | Secondary CTA: "Book a Discovery Call"
+
+2. INTERACTIVE FILTER TABS
+   [ All Projects ] [ Autonomous Agent Swarms ] [ Full-Stack AI SaaS ] [ Enterprise & MCP ] [ Media Pipelines ] [ Developer Tooling ]
+
+3. UNIVERSAL CASE STUDY FORMAT (For Every Project Modal / Detail Page)
+   - High-Impact Hero Banner (Product Screenshot / Architecture Diagram)
+   - Quick Metadata Badge Bar: Role | Timeline | Tech Stack | Deliverables
+   - The Problem (Business Friction & Bottlenecks)
+   - The Solution & Architecture (ASCII / Mermaid System Diagram)
+   - Core Engineering Highlights (Security, Token Optimization, Error Handling)
+   - Tangible Business Results & ROI Metrics
+   - Live Demo Button + Clean GitHub Repo Link
+
+================================================================================
+TRACK 1: AUTONOMOUS AI AGENT SWARMS & LEAD GEN ENGINES
+================================================================================
+
+--------------------------------------------------------------------------------
+PROJECT 1.1: Autonomous 5-Agent Outbound Sales & Closer Swarm (Voice AI SaaS)
+--------------------------------------------------------------------------------
+- Portfolio Card Title: "Autonomous 5-Agent B2B Sales & Closing Swarm"
+- Tagline: "Zero-human outbound engine that scouts local contractors, computes lost revenue, and negotiates/books AI voice demo calls."
+- Category Tags: [Autonomous Swarms] [LangGraph] [Claude 3.5 Sonnet] [Smartlead]
+
+- Visual Assets & Mockups to Show:
+  1. High-resolution flow diagram showing the 5 agents passing state to each other.
+  2. Side-by-side screenshot of a personalized email draft showing how Claude parsed the contractor's specific 1-star reviews about "missed calls".
+  3. Interactive audio player: A sample 30-second audio recording of the AI Receptionist demo call.
+
+- Case Study Copy Structure:
+  * Problem: Home-service contractors (HVAC/plumbers) lose thousands in revenue from unanswered after-hours calls, but manual outbound sales reps are expensive and inconsistent.
+  * Solution: Built an autonomous 5-agent pipeline using Python (LangGraph) and Claude 3.5 Sonnet that scrapes Google Places, verifies email/phone deliverability, generates custom ROI loss metrics, handles objections dynamically via email/SMS, and links directly to demo lines.
+  * Key Metrics: 62% Open Rate | 11.4% Cold Reply Rate | 38 Qualified Demos booked in 30 days with 0 manual touches.
+
+- Live Demo / Embed Idea:
+  * An interactive "Lead Loss Calculator & Email Generator" sandbox where website visitors enter their plumbing/HVAC company name, and the agent generates a live personalized cold pitch on the spot.
+
+- GitHub Showcase Angle:
+  * Highlight the deterministic JSON state machine and the prompt feedback loop in `/agents/closer_agent.py`.
+
+--------------------------------------------------------------------------------
+PROJECT 1.2: End-to-End n8n Lead Management & GoHighLevel Engine
+--------------------------------------------------------------------------------
+- Portfolio Card Title: "Enterprise Inbound Lead Triage & CRM Sync Engine"
+- Tagline: "Multi-channel lead ingestion, Apollo data enrichment, Claude AI qualification scoring (0-100), and automated GoHighLevel routing in under 3 seconds."
+- Category Tags: [n8n Automation] [GoHighLevel] [Claude API] [Slack Block Kit]
+
+- Visual Assets & Mockups to Show:
+  1. Full-canvas screenshot of the modular n8n workflow highlighting error-handling sub-nodes.
+  2. Rich Slack Block Kit notification mockup showing lead badge, Claude 3-bullet summary, and 1-click action buttons.
+  3. GoHighLevel pipeline view showing leads automatically categorized and assigned to sales reps.
+
+- Case Study Copy Structure:
+  * Problem: High-growth digital agency was drowning in manual lead sorting across Facebook Ads, Typeform, and web forms, causing 4+ hour lead response delays.
+  * Solution: Engineered an n8n webhook pipeline integrated with Claude 3.5 Sonnet for real-time lead fit scoring (1-100) and Apollo.io firmographic enrichment, auto-updating GoHighLevel CRM and alerting reps via Slack in real time.
+  * Key Metrics: Lead response time dropped from 4 hours to 45 seconds | 100% data consistency across CRM | 15 hours saved per week.
+
+- Live Demo / Embed Idea:
+  * An embedded interactive Typeform on your site that triggers a live test webhook and displays the resulting Slack alert card and GHL opportunity format on screen.
+
+- GitHub Showcase Angle:
+  * Provide the sanitized n8n workflow JSON export and custom JavaScript function nodes in a public repository with clean `.env.example`.
+
+--------------------------------------------------------------------------------
+PROJECT 1.3: Autonomous Email Attachment & Google Drive Auto-Filer
+--------------------------------------------------------------------------------
+- Portfolio Card Title: "Autonomous Document Intelligence & Google Drive Sentry"
+- Tagline: "Serverless Claude agent that reads incoming invoices/contracts, standardizes filenames, and routes files to Google Drive without human intervention."
+- Category Tags: [Document AI] [Serverless Python] [Google Workspace API] [Claude 3.5 Haiku]
+
+- Visual Assets & Mockups to Show:
+  1. Before/After visual: A messy inbox attachment list (`document final 2.pdf`) vs. clean standardized Google Drive directory (`2026-09-01_AcmeCorp_Invoice_1042.pdf`).
+  2. Architecture flowchart: Email Ingestion -> Claude Extraction -> Drive Router -> `_Needs_Review` Fallback Queue.
+
+- Case Study Copy Structure:
+  * Problem: Operations teams waste hours downloading, renaming, and filing invoices, contracts, and supplier reports, leading to lost files and inconsistent folder hierarchies.
+  * Solution: Deployed a serverless Python pipeline on Google Cloud Run utilizing Claude 3.5 Haiku to extract vendor, document type, and dates from email context and PDF text, deterministically renaming and filing items into Drive.
+  * Key Metrics: 99.2% automated classification accuracy | $0.001 average AI processing cost per document | Zero misplaced invoices.
+
+- Live Demo / Embed Idea:
+  * A drag-and-drop PDF dropzone on your site where visitors drop an invoice/contract and watch Claude parse metadata and output the exact standardized filename and Drive folder path in real time.
+
+================================================================================
+TRACK 2: FULL-STACK AI WEB APPLICATIONS & SAAS DASHBOARDS
+================================================================================
+
+--------------------------------------------------------------------------------
+PROJECT 2.1: Claude + Canva AI Design Studio & Business Dashboard
+--------------------------------------------------------------------------------
+- Portfolio Card Title: "Claude + Canva AI Design Studio & Operations Dashboard"
+- Tagline: "Full-stack multi-tenant platform with official Canva Teams MCP integration for automated, brand-aligned marketing collateral generation."
+- Category Tags: [Next.js 14] [TypeScript] [Canva MCP] [PostgreSQL] [TailwindCSS]
+
+- Visual Assets & Mockups to Show:
+  1. High-fidelity UI mockup of the Dashboard (`Overview`, `Claude Design Studio`, `Brand Knowledge`, `Settings`).
+  2. Screen recording showing user entering a natural language design prompt and getting a live, editable Canva design deep-link pre-populated with brand colors and logos.
+  3. Brand Knowledge Base configuration screen with custom color palettes and typography controls.
+
+- Case Study Copy Structure:
+  * Problem: Marketing teams struggle to scale on-brand graphics rapidly without bottlenecking senior graphic designers.
+  * Solution: Architected a production Next.js 14 dashboard with RBAC (Admin, Manager, Staff) connecting Claude 3.5 Sonnet to the official Canva Teams MCP connector. The system injects brand guidelines into prompts, instructs Canva to assemble templates, and outputs editable Canva URLs for human review.
+  * Key Metrics: 80% reduction in design turnaround time | 100% brand guideline adherence across fonts and palettes.
+
+- Live Demo / Embed Idea:
+  * Public live demo link on Vercel with guest access allowing visitors to test the prompt-to-design workflow.
+
+--------------------------------------------------------------------------------
+PROJECT 2.2: Client-Facing AI Chat Assistant with Live Tool Calling
+--------------------------------------------------------------------------------
+- Portfolio Card Title: "Low-Latency Client-Facing AI Assistant with Tool Calling"
+- Tagline: "Production chat application with real-time token streaming, persistent context memory, and live REST API tool execution."
+- Category Tags: [React / Next.js] [Claude Messages API] [SSE Streaming] [Tool Calling]
+
+- Visual Assets & Mockups to Show:
+  1. Clean, minimalist chat interface displaying real-time Markdown rendering, code highlighting, and streaming response indicators.
+  2. Expandable "Tool Execution" card in the chat UI showing the live external API request and response payload.
+
+- Case Study Copy Structure:
+  * Problem: Generic chatbots suffer from hallucinated answers, slow response latency, and lack the ability to query live external business databases.
+  * Solution: Built a high-performance chat interface backed by the Claude Messages API using Server-Sent Events (SSE) for sub-second streaming, coupled with structured function calling to fetch live database records and external API data safely.
+  * Key Metrics: < 350ms Time-To-First-Token (TTFT) | 100% valid JSON tool execution with automatic rate-limit backoff.
+
+- Live Demo / Embed Idea:
+  * Live embedded chat widget on your portfolio allowing visitors to ask questions about your resume, tech stack, and availability.
+
+--------------------------------------------------------------------------------
+PROJECT 2.3: Production Dual-Layer Web Application
+--------------------------------------------------------------------------------
+- Portfolio Card Title: "Enterprise Dual-Layer AI Web Application"
+- Tagline: "Rapid full-stack architecture built using Claude Code CLI with embedded Claude API intelligence for automated document synthesis."
+- Category Tags: [Full-Stack TypeScript] [Node.js] [Claude Code CLI] [Production DevOps]
+
+- Visual Assets & Mockups to Show:
+  1. Multi-device responsive mockup (Desktop, Tablet, Mobile) of the web application.
+  2. Code snippet diff showing the clean separation between UI presentation, server-side API proxying, and AI prompt caching.
+
+- Case Study Copy Structure:
+  * Problem: Startups need rapid product scaffolding without sacrificing enterprise security, type safety, and clean software architecture.
+  * Solution: Engineered an end-to-end full-stack web application leveraging Claude Code CLI for rapid scaffolding and testing, featuring an embedded Claude API intelligence layer with zero client-side key exposure and automated cloud CI/CD.
+  * Key Metrics: 5-day MVP delivery timeline | 100% TypeScript type safety | Production-grade security audit.
+
+================================================================================
+TRACK 3: ENTERPRISE WORKFLOW AUTOMATION & SYSTEMS INTEGRATION
+================================================================================
+
+--------------------------------------------------------------------------------
+PROJECT 3.1: ERPNext / Frappe Claude MCP Agent & Manager Approval Gate
+--------------------------------------------------------------------------------
+- Portfolio Card Title: "ERPNext Autonomous Agent & Approval Gatekeeper"
+- Tagline: "Custom Frappe MCP server connecting Claude to core ERP workflows with human-in-the-loop sign-off for financial transactions."
+- Category Tags: [ERPNext / Frappe] [Python] [Model Context Protocol] [Enterprise RBAC]
+
+- Visual Assets & Mockups to Show:
+  1. Architecture diagram: Frappe REST API <-> MCP Tool Calling <-> Claude <-> Two-Phase Approval Gatekeeper.
+  2. UI screenshot of ERPNext showing an AI-drafted Purchase Order with a highlighted "Awaiting Manager Approval" badge and AI summary diff.
+
+- Case Study Copy Structure:
+  * Problem: Enterprise ERP systems require heavy manual record updates across Sales, Inventory, and Accounting, but autonomous AI agents carry the risk of destructive data mutations.
+  * Solution: Developed a custom Frappe application exposing secure MCP endpoints to Claude for data analysis, reporting, and automated draft transaction creation, paired with a mandatory human-in-the-loop approval gate for sensitive actions (POs, Journal Entries).
+  * Key Metrics: 70% faster month-end reporting | 100% audit compliance with zero unauthorized database mutations.
+
+- GitHub Showcase Angle:
+  * Public GitHub repo with the custom Frappe app (`frappe_claude_agent`) and MCP tool schemas.
+
+--------------------------------------------------------------------------------
+PROJECT 3.2: SharePoint Excel Cloud Tracker & Power Automate AI Copilot
+--------------------------------------------------------------------------------
+- Portfolio Card Title: "Global SharePoint Excel Automation & M365 AI Copilot"
+- Tagline: "100% cloud-native Microsoft 365 pipeline integrating SharePoint, Excel Online, Power Automate, and Claude with zero local PC dependencies."
+- Category Tags: [SharePoint Online] [Power Automate] [Office Scripts] [Claude API]
+
+- Visual Assets & Mockups to Show:
+  1. Diagram illustrating multi-region global access: Global Teams (APAC/EMEA/Americas) -> SharePoint Online -> Power Automate -> Claude API.
+  2. Mockup of automated Outlook reminder email and Microsoft Teams escalation card with natural language summaries.
+
+- Case Study Copy Structure:
+  * Problem: Global enterprise operational trackers stored in SharePoint suffer from manual data entry fatigue, missed deadlines, and disjointed email follow-ups.
+  * Solution: Engineered a 100% cloud-native automation suite using Power Automate Cloud Flows, Office Scripts (TypeScript), and Anthropic Claude REST API. Automatically tracks action lifecycles, computes completion KPIs, and allows plain-English data querying in Microsoft Teams.
+  * Key Metrics: 85% reduction in administrative follow-up time | Deployed to 500+ global team members with zero local software installs.
+
+--------------------------------------------------------------------------------
+PROJECT 3.3: Natural Language Google Sheets Auto-Fill Connector
+--------------------------------------------------------------------------------
+- Portfolio Card Title: "Natural Language Google Sheets AI Auto-Fill Tool"
+- Tagline: "Seamless Claude Desktop MCP and Google Apps Script sidebar allowing users to paste unstructured text and auto-populate spreadsheets."
+- Category Tags: [Google Sheets API] [Claude Desktop MCP] [Google Apps Script] [OAuth2]
+
+- Visual Assets & Mockups to Show:
+  1. Side-by-side animated GIF: Pasting raw, messy supplier text into the Claude sidebar -> spreadsheet columns immediately populated and styled.
+  2. Claude Desktop MCP configuration screenshot showing direct tool invocation.
+
+- Case Study Copy Structure:
+  * Problem: E-commerce operators waste hours daily manually transcribing messy supplier lists and customer inquiries into structured spreadsheet columns.
+  * Solution: Built a dual-mode integration: (1) A native Google Sheets MCP server for Claude Desktop users, and (2) An in-sheet Google Apps Script sidebar that parses raw text via Claude API and appends formatted, validated rows automatically.
+  * Key Metrics: 10x faster data entry speed | 100% format accuracy with automatic column header matching.
+
+================================================================================
+TRACK 4: DEVELOPER TOOLING, MULTI-SESSION ORCHESTRATION & SWARMS
+================================================================================
+
+--------------------------------------------------------------------------------
+PROJECT 4.1: Claude Code Multi-Session Orchestration Console & Notification Plane
+--------------------------------------------------------------------------------
+- Portfolio Card Title: "Claude Code Multi-Session Omni-Console & Notification Hub"
+- Tagline: "Centralized web management plane and interactive Telegram/Slack bot for monitoring, switching, and remotely approving multiple Claude Code CLI sessions."
+- Category Tags: [Developer Tools] [WebSockets] [xterm.js] [Telegram Bot API] [Doppler]
+
+- Visual Assets & Mockups to Show:
+  1. Modern dark-mode web console screenshot featuring multiple terminal session tabs (`Session-ClientA`, `Session-ClientB`), resource gauges, and status badges.
+  2. Mobile screenshot showing a Telegram bot notification: *"Session Alpha is waiting for file overwrite approval: [Approve] [Reject] [Custom Input]"*.
+
+- Case Study Copy Structure:
+  * Problem: Developers running multiple Claude Code sessions across separate accounts have no central visibility; sessions stall silently on interactive approval prompts.
+  * Solution: Architected a headless supervisor daemon in Node.js/Python that listens to CLI stdout streams, pushes real-time alerts to a Telegram/Slack bot for remote 1-click approvals, and provides a multi-tab web terminal console (`xterm.js`) with isolated cloud secrets (`Doppler/Infisical`).
+  * Key Metrics: 0 dropped sessions | Instant mobile reply capability | 4x developer multitasking leverage.
+
+- Live Demo / Embed Idea:
+  * Interactive web terminal simulator on your site where visitors can test switching between simulated agent sessions and sending inputs.
+
+--------------------------------------------------------------------------------
+PROJECT 4.2: Multi-Client Agent Swarm Architecture & Token Optimization
+--------------------------------------------------------------------------------
+- Portfolio Card Title: "Multi-Client Agent Swarm & Context Token Optimization"
+- Tagline: "Hierarchical leader-worker agent swarm operating across isolated Git worktrees with strict token budgeting for 6 concurrent client workloads."
+- Category Tags: [Agent Swarms] [Git Worktrees] [Token Economics] [Deterministic Testing]
+
+- Visual Assets & Mockups to Show:
+  1. Visual diagram of the hierarchical swarm: Leader Controller -> Specialized Subagents (Researcher, Coder, Test Runner) -> Isolated Git Worktrees.
+  2. Token burn chart showing a 55% reduction in token consumption using selective context injection and `.claudeignore` rules.
+
+- Case Study Copy Structure:
+  * Problem: Managing 6 active client development workloads simultaneously causes severe token bloat, context bleeding, and manual context-reset overhead.
+  * Solution: Designed a modular workspace hierarchy with isolated `CLAUDE.md` rules and deployed specialized subagent swarms operating in parallel Git worktrees with automated linter and unit-test verification gates.
+  * Key Metrics: 55% token cost reduction | 3x sprint delivery throughput across 6 client accounts.
+
+--------------------------------------------------------------------------------
+PROJECT 4.3: Windows & WSL2 Developer Environment Tuning & Coaching Framework
+--------------------------------------------------------------------------------
+- Portfolio Card Title: "Windows / WSL2 AI DevOps Mastery & Agentic Coaching"
+- Tagline: "End-to-end environment optimization curriculum transforming Windows setups into ultra-fast, high-efficiency Claude Code agentic workstations."
+- Category Tags: [DevOps] [WSL2 / Ubuntu] [Windows Terminal] [Local MCP] [Pair-Programming]
+
+- Visual Assets & Mockups to Show:
+  1. Terminal setup screenshot featuring Starship prompt, custom aliases, fuzzy search (`fzf`), and local MCP server status monitors.
+  2. Modular 4-session coaching syllabus graphic.
+
+- Case Study Copy Structure:
+  * Problem: Windows developers encounter major I/O bottlenecks, PATH errors, permission traps, and missing MCP tooling when running advanced agentic workflows.
+  * Solution: Developed a comprehensive audit and live pair-programming coaching curriculum covering WSL2 Ubuntu configuration, custom shell aliases, local MCP server authoring, and test-driven agentic development loops.
+  * Key Metrics: 4x terminal execution speedup | 100% resolution of environment traps for coached engineers.
+
+================================================================================
+TRACK 5: AI MEDIA, CONTENT ENGINES & AUTOMATED VIDEO PIPELINES
+================================================================================
+
+--------------------------------------------------------------------------------
+PROJECT 5.1: Football YouTube Shorts Pipeline (Claude Code + ElevenLabs + CapCut)
+--------------------------------------------------------------------------------
+- Portfolio Card Title: "Automated Football YouTube Shorts Production Pipeline"
+- Tagline: "Script-to-video automation system generating viral storytelling Shorts with AI voiceover, dynamic CapCut editing, and kinetic subtitles."
+- Category Tags: [Python] [Claude 3.5 Sonnet] [ElevenLabs API] [CapCut Automation] [FFmpeg]
+
+- Visual Assets & Mockups to Show:
+  1. High-retention vertical video player embedding an actual 30-second generated football narrative Short.
+  2. Flowchart: Match Event -> Claude Script & B-roll Cue JSON -> ElevenLabs Audio -> Automated Timeline Assembly -> CapCut Draft.
+
+- Case Study Copy Structure:
+  * Problem: Creating daily high-retention football storytelling Shorts requires hours of manual scripting, voiceover recording, clip searching, and timeline editing.
+  * Solution: Built a semi-automated pipeline where Claude Code generates hook-driven narrative scripts and B-roll search queries, ElevenLabs generates cinematic voiceover with word timestamps, and a Python automation engine stitches video drafts ready for CapCut polishing.
+  * Key Metrics: Production time cut from 3 hours to 15 minutes per video | 80%+ viewer retention on benchmarked Shorts.
+
+- Live Demo / Embed Idea:
+  * A "Generate a Football Short Script & Voiceover" interactive widget where visitors select two football clubs/players and hear the generated narrative audio in 10 seconds.
+
+--------------------------------------------------------------------------------
+PROJECT 5.2: High-Velocity AI Video Pipeline (Higgsfield + FFmpeg + Claude)
+--------------------------------------------------------------------------------
+- Portfolio Card Title: "High-Volume AI Video Operator & QC Pipeline"
+- Tagline: "Batch AI video production system producing hundreds of cinematic commercial shorts with surgical Claude prompt-fixing and CLI FFmpeg automation."
+- Category Tags: [Higgsfield / Seedance] [FFmpeg CLI] [Prompt Engineering] [Batch QC]
+
+- Visual Assets & Mockups to Show:
+  1. Carousel of generated 20-second cinematic scenes showing perfect character identity consistency across varying locations.
+  2. Real-world FFmpeg CLI script snippet used for batch 9:16 cropping, subtitle burning, and audio loudness normalization.
+
+- Case Study Copy Structure:
+  * Problem: High-volume video production shops struggle with AI video inconsistency (identity drift, lighting glitches) and waste money on blind re-rolls.
+  * Solution: Designed an operator workflow combining Higgsfield/Seedance generation with a Claude prompt copilot that analyzes visual misses and rewrites prompt tokens surgically, backed by batch FFmpeg CLI scripts for instant post-processing.
+  * Key Metrics: 200+ shorts shipped per month | 40% reduction in generation credit waste | Zero queue bottlenecks.
+
+--------------------------------------------------------------------------------
+PROJECT 5.3: Multi-Brand Instagram AI Marketing Director & Content Engine
+--------------------------------------------------------------------------------
+- Portfolio Card Title: "Multi-Brand Instagram AI Marketing Director (Regional Sports Group)"
+- Tagline: "Strategic AI marketing engine managing 5 distinct sports sub-brands, analyzing Meta Graph API analytics, and drafting weekly content calendars."
+- Category Tags: [Meta Graph API] [Claude Projects] [Canva MCP] [Social Media Strategy]
+
+- Visual Assets & Mockups to Show:
+  1. Dashboard mockup displaying the 5 sub-brands (*Regional Sports, Wolves Academy, Al Maha, Fitfam, RSM*) with brand voice guidelines and active content schedules.
+  2. Sample generated weekly content calendar showing Reel concepts, copywriting hooks, and on-field videographer filming shot-lists.
+
+- Case Study Copy Structure:
+  * Problem: Sports entertainment group managing 5 distinct sub-brands struggled to maintain consistent, brand-aligned posting schedules and analyze weekly Meta ad performance.
+  * Solution: Configured isolated Claude Projects for each sub-brand, connected Meta Graph API analytics for weekly automated performance digests, and built an automated planner that generates multi-format content schedules and videographer shot-lists.
+  * Key Metrics: 5 distinct brand voices maintained with zero cross-contamination | 5 hours saved per week on marketing planning.
+
+================================================================================
+TRACK 6: AI DESIGN SYSTEMS, WORKSPACE OPERATIONS & EDUCATION
+================================================================================
+
+--------------------------------------------------------------------------------
+PROJECT 6.1: Brand Design System as Code (React Components + Design Tokens)
+--------------------------------------------------------------------------------
+- Portfolio Card Title: "Brand Design System as Code for Claude Design"
+- Tagline: "Machine-readable React component library and token taxonomy that eliminates visual AI hallucinations in Claude Design."
+- Category Tags: [React] [Design Tokens] [CSS Custom Properties] [Claude Design] [Storybook]
+
+- Visual Assets & Mockups to Show:
+  1. Interactive Storybook / component catalog embedding live React UI components (Button, Card, Table, KPI Block, Chart Wrapper).
+  2. Code snippet of `tokens.json` and `tokens.css` showing semantic token aliases (`--color-surface-primary`).
+
+- Case Study Copy Structure:
+  * Problem: Corporate clients uploading slide decks to Claude Design experienced repeated visual hallucinations and inconsistent styling.
+  * Solution: Extracted design tokens directly from PowerPoint XML files (`ppt/theme/theme1.xml`) and created a strictly tokenized React component library (zero hardcoded styles) with an LLM-optimized `README.md` that Claude Design can read directly.
+  * Key Metrics: 100% deterministic brand reproduction in Claude Design | 10+ strictly tokenized React components | Zero manual CSS overrides needed.
+
+- Live Demo / Embed Idea:
+  * Embedded interactive Storybook component explorer directly on the case study page.
+
+--------------------------------------------------------------------------------
+PROJECT 6.2: Multi-Company Claude Cowork & Skills Executive Assistant
+--------------------------------------------------------------------------------
+- Portfolio Card Title: "Multi-Company Claude Cowork & Skills Operating System"
+- Tagline: "Live-configured AI executive assistant linking Claude Cowork to Microsoft 365, GoHighLevel, Gamma, and Make.com across multiple companies."
+- Category Tags: [Claude Cowork] [Custom Skills] [Microsoft 365] [GoHighLevel] [MCP]
+
+- Visual Assets & Mockups to Show:
+  1. Workspace architecture map showing isolated company projects, global behavioral instructions, and tool connector endpoints.
+  2. Sample execution flow of a custom Claude Skill autonomously triaging daily Outlook inboxes and updating GHL opportunities.
+
+- Case Study Copy Structure:
+  * Problem: Serial entrepreneur managing multiple distinct businesses needed an AI executive assistant to automate routine operations without mixing company contexts.
+  * Solution: Live-configured Claude Cowork with isolated company project knowledge, authored custom Skills for proposal drafting and CRM triage, and connected Microsoft 365, GoHighLevel, and Make.com via native MCP connectors.
+  * Key Metrics: 15+ hours of routine executive operations automated weekly | 2-day live screen-share deployment.
+
+--------------------------------------------------------------------------------
+PROJECT 6.3: Studio 2-Hour Video Masterclass Course Production
+--------------------------------------------------------------------------------
+- Portfolio Card Title: "Studio 2-Hour Claude AI Developer Video Masterclass"
+- Tagline: "High-production modular video masterclass on rapid prototyping, spec engineering, and full-stack development with Claude Code."
+- Category Tags: [Technical Education] [Video Production] [Claude Code CLI] [Curriculum Design]
+
+- Visual Assets & Mockups to Show:
+  1. High-definition video player trailer (60-second sizzle reel of the masterclass with dynamic code zoom-ins and chapter cards).
+  2. Modular 5-part curriculum syllabus breakdown infographic.
+
+- Case Study Copy Structure:
+  * Problem: Developers and founders need structured, hands-on masterclasses demonstrating production Claude engineering rather than superficial surface-level prompt tutorials.
+  * Solution: Scripted, filmed, and edited a studio-grade 2-hour modular video masterclass (4K 60fps capture, studio audio normalized to -14 LUFS) covering PRD spec engineering, live Claude Code app development, and MCP tool authoring.
+  * Key Metrics: 5 modular lessons | Comprehensive downloadable starter code repository | 5.0 client review rating.
+
+================================================================================
+SUMMARY: IMPLEMENTATION CHECKLIST FOR YOUR PORTFOLIO WEBSITE
+================================================================================
+
+[ ] 1. Build or update your portfolio repository (Next.js 14 / TailwindCSS / Vercel).
+[ ] 2. Create the 6 category filter tabs on the homepage.
+[ ] 3. Implement the Universal Case Study modal / page template for all 18 projects.
+[ ] 4. Host live demo sandboxes on Vercel/Railway for key interactive projects (Projects 1.1, 2.1, 2.2, 3.3, 6.1).
+[ ] 5. Link every case study to a clean, well-documented GitHub repository with a detailed `README.md` and `.env.example`.
+[ ] 6. Include a high-contrast "Hire Me / Book Strategy Call" CTA at the bottom of every project case study.

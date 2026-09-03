@@ -1,0 +1,24 @@
+{
+  "objections": {
+    "OBJECTION_PRICE": {
+      "name": "Price / Budget Constraint",
+      "core_rebuttal": "At $497/month, the system pays for itself with a single recovered call. For home service contractors, the average emergency ticket is $450–$1,200. Recovering even one customer who would have called your competitor immediately turns this into a net-positive profit center.",
+      "call_to_action": "Try the interactive voice demo on your phone to see how smoothly it books the job before deciding."
+    },
+    "OBJECTION_COMPLEXITY": {
+      "name": "Technical Complexity / Setup Time",
+      "core_rebuttal": "There is zero software to install or hardware to configure. It operates via standard carrier call-forwarding: whenever your line rings for more than 4 rings or after 6 PM, it automatically forwards to the AI receptionist, which gathers the customer's issue and texts your technician immediately.",
+      "call_to_action": "We can get your test line live in under 5 minutes."
+    },
+    "OBJECTION_ALREADY_HAVE": {
+      "name": "Already Have an In-House Receptionist / Office Manager",
+      "core_rebuttal": "Most of our contractor clients have an in-house receptionist. SkillsVital is built specifically for what happens when they are on another line, out on lunch, or closed after 6 PM and on weekends—which is when 43% of high-ticket emergency calls happen.",
+      "call_to_action": "Listen to how it handles after-hours overflow by dialing our demo line."
+    },
+    "OBJECTION_ROBOTIC": {
+      "name": "Fear that AI Sounds Like a Robotic IVR",
+      "core_rebuttal": "Our voice AI operates with conversational latency under 600ms, using real-time human tone inflections, speech interruption handling, and natural contractor terminology.",
+      "call_to_action": "Don't take our word for it—dial our live receptionist line right now to test it."
+    }
+  }
+}
