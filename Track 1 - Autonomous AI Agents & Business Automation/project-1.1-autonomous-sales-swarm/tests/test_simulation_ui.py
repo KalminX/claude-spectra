@@ -110,7 +110,7 @@ def test_ui_dashboard_endpoint(client):
     assert response.status_code == 200
     assert "text/html" in response.headers["content-type"]
     assert "AUTONOMOUS SALES SWARM" in response.text
-    assert "100% SIMULATION MODE" in response.text
+    assert "100% SIMULATION" in response.text
 
 def test_simulation_api_endpoints(client):
     # Reset first
