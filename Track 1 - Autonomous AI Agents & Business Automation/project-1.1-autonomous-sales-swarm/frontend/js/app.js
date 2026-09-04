@@ -252,7 +252,7 @@ const App = (() => {
         if (!el.leadsTableBody) return;
         if (!leads || leads.length === 0) {
             el.leadsTableBody.innerHTML = `
-                <tr>
+                <tr class="empty-row">
                     <td colspan="7" style="text-align: center; padding: 1.5rem; color: var(--text-dim);">
                         No leads in active session. Advance an agent step or run a batch to populate.
                     </td>
@@ -272,25 +272,29 @@ const App = (() => {
             const lostRevHtml = l.lost_revenue ? `<span style="color: var(--rose); font-weight: bold;">$${Math.round(l.lost_revenue).toLocaleString()}/mo</span>` : '<span style="color: var(--text-dim);">-</span>';
 
             return `
-                <tr>
-                    <td>
-                        <div style="font-weight: 700; color: #fff;">${escapeHtml(l.company_name)}</div>
-                        <div style="font-size: 0.68rem; color: var(--text-dim);">${escapeHtml(l.niche)} • ${escapeHtml(l.owner_name)}</div>
+                <tr class="lead-row" data-lead-id="${l.id}">
+                    <td class="col-contractor" data-label="Contractor">
+                        <div class="lead-company-name" style="font-weight: 700; color: #fff;">${escapeHtml(l.company_name)}</div>
+                        <div class="lead-niche-owner" style="font-size: 0.68rem; color: var(--text-dim);">${escapeHtml(l.niche)} • ${escapeHtml(l.owner_name)}</div>
                     </td>
-                    <td>
-                        <div style="color: var(--text-muted); font-family: var(--font-mono);">${escapeHtml(l.email)}</div>
-                        <div style="font-size: 0.68rem; color: var(--text-dim); font-family: var(--font-mono);">${escapeHtml(l.phone)}</div>
+                    <td class="col-contact" data-label="Contact">
+                        <div class="lead-email" style="color: var(--text-muted); font-family: var(--font-mono);">${escapeHtml(l.email)}</div>
+                        <div class="lead-phone" style="font-size: 0.68rem; color: var(--text-dim); font-family: var(--font-mono);">${escapeHtml(l.phone)}</div>
                     </td>
-                    <td style="color: var(--text-muted);">${escapeHtml(l.city)}, ${escapeHtml(l.state)}</td>
-                    <td>
+                    <td class="col-location" data-label="Location" style="color: var(--text-muted);">${escapeHtml(l.city)}, ${escapeHtml(l.state)}</td>
+                    <td class="col-hygiene" data-label="Hygiene & Carrier">
+                        <span class="mobile-cell-label">Hygiene: </span>
                         <span style="color: ${scoreColor}; font-weight: 600; font-family: var(--font-mono);">
                             ${score}% (${escapeHtml(l.phone_type || 'mobile')})
                         </span>
                     </td>
-                    <td style="font-family: var(--font-mono);">${lostRevHtml}</td>
-                    <td>${statusTag}</td>
-                    <td style="text-align: right;">
-                        <button onclick="App.viewLeadDetail('${l.id}')" class="btn btn-secondary" style="padding: 0.25rem 0.55rem; font-size: 0.72rem;">
+                    <td class="col-revenue" data-label="Lost Revenue" style="font-family: var(--font-mono);">
+                        <span class="mobile-cell-label">Lost Rev: </span>
+                        ${lostRevHtml}
+                    </td>
+                    <td class="col-status" data-label="Status">${statusTag}</td>
+                    <td class="col-action" data-label="Action" style="text-align: right;">
+                        <button onclick="App.viewLeadDetail('${l.id}')" class="btn btn-secondary btn-inspect" style="padding: 0.25rem 0.55rem; font-size: 0.72rem;">
                             Inspect
                         </button>
                     </td>
