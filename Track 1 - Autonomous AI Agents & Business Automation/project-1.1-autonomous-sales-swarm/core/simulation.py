@@ -99,7 +99,7 @@ class SyntheticLeadGenerator:
         company_name = f"{adj} {noun} [Simulated]"
         slug = f"{adj.lower()}-{chosen_niche.value.lower()}-{c.lower()}"
 
-        unique_code = f"{random.randint(10, 99)}"
+        unique_code = f"{uuid.uuid4().hex[:6]}"
         lead_id = f"sim_{chosen_niche.value.lower()[:3]}_{s.lower()}_{unique_code}"
 
         if force_invalid_email:

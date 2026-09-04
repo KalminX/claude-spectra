@@ -440,7 +440,7 @@ const App = (() => {
             if (el.modalSubTitle) el.modalSubTitle.innerText = `${l.id} • ${l.niche} • ${l.city}, ${l.state}`;
 
             let bodyHtml = `
-                <div class="card" style="padding: 0.85rem; display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; font-size: 0.75rem;">
+                <div class="card modal-lead-overview">
                     <div><strong style="color: var(--text-dim);">Owner:</strong> ${escapeHtml(l.owner_name)}</div>
                     <div><strong style="color: var(--text-dim);">Synthetic Email:</strong> <span style="font-family: var(--font-mono);">${escapeHtml(l.email)}</span></div>
                     <div><strong style="color: var(--text-dim);">Phone:</strong> <span style="font-family: var(--font-mono);">${escapeHtml(l.phone)}</span></div>

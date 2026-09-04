@@ -384,9 +384,16 @@ body {
 /* Tab Navigation */
 .tabs-nav {
     display: flex;
-    gap: 1.5rem;
+    gap: 1.25rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     margin-top: 1.5rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    scrollbar-width: none;
+}
+.tabs-nav::-webkit-scrollbar {
+    display: none;
 }
 
 .tab-btn {
@@ -395,10 +402,11 @@ body {
     color: var(--text-dim);
     font-size: 0.85rem;
     font-weight: 600;
-    padding: 0.75rem 0;
+    padding: 0.75rem 0.25rem;
     cursor: pointer;
     border-bottom: 2px solid transparent;
     transition: all 0.15s ease;
+    flex-shrink: 0;
 }
 
 .tab-btn:hover {
@@ -410,14 +418,32 @@ body {
     border-bottom-color: var(--emerald);
 }
 
+/* Header Actions */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Control Status Component */
+.control-status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+}
+
 /* Table */
 .table-wrapper {
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
     margin-top: 1rem;
+    border-radius: 0.75rem;
 }
 
 .data-table {
     width: 100%;
+    min-width: 720px;
     border-collapse: collapse;
     font-size: 0.75rem;
     text-align: left;
@@ -449,6 +475,34 @@ body {
     grid-template-columns: 5fr 7fr;
     gap: 1.25rem;
     margin-top: 1rem;
+}
+
+.closer-decision-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+}
+
+/* Evolutionary Loop Sections */
+.meta-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1rem;
+    gap: 1rem;
+}
+
+.meta-split-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.meta-subject-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
 }
 
 /* Modal / Drawer */
@@ -502,6 +556,14 @@ body {
     font-size: 0.8rem;
 }
 
+.modal-lead-overview {
+    padding: 0.85rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+}
+
 .modal-footer {
     padding: 0.85rem 1.25rem;
     border-top: 1px solid #1e293b;
@@ -509,10 +571,24 @@ body {
     justify-content: flex-end;
 }
 
-/* Responsive Rules */
-@media (max-width: 1024px) {
+/* ==============================================================================
+   RESPONSIVE ADAPTATION BREAKPOINTS
+   ============================================================================== */
+
+/* Large Laptops / Small Desktops (<= 1200px) */
+@media (max-width: 1200px) {
     .agent-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    }
+    .kpi-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+/* Tablets Landscape & Medium Screens (<= 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 1.25rem;
     }
     .kpi-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -520,13 +596,152 @@ body {
     .sandbox-grid {
         grid-template-columns: 1fr;
     }
+    .meta-subject-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
+/* Tablets Portrait & Large Phones (<= 860px) */
+@media (max-width: 860px) {
+    .navbar-inner {
+        height: auto;
+        min-height: 4rem;
+        padding: 0.75rem 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+    }
+    .brand-wrapper {
+        justify-content: space-between;
+        width: 100%;
+    }
+    .header-actions {
+        display: grid;
+        grid-template-columns: 1fr 1fr auto;
+        width: 100%;
+        gap: 0.5rem;
+    }
+    .header-actions .btn {
+        justify-content: center;
+        padding: 0.5rem 0.6rem;
+    }
+    .control-bar {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.85rem;
+        padding: 1rem;
+    }
+    .control-group {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+        width: 100%;
+    }
+    .control-label {
+        grid-column: span 2;
+        margin-bottom: 0.15rem;
+    }
+    .select-input {
+        width: 100%;
+        min-height: 38px;
+    }
+    .control-status {
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 0.5rem;
+        border-top: 1px solid var(--border-color);
+    }
+    .agent-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .meta-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+    }
+    .meta-header .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    .meta-split-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Standard Mobile Devices (<= 640px) */
 @media (max-width: 640px) {
+    .container {
+        padding: 0 0.85rem;
+    }
     .agent-grid {
         grid-template-columns: 1fr;
     }
     .kpi-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.5rem;
+    }
+    .kpi-card {
+        padding: 0.65rem 0.75rem;
+    }
+    .kpi-value {
+        font-size: 1.15rem;
+    }
+    .tabs-nav {
+        gap: 0.85rem;
+    }
+    .tab-btn {
+        font-size: 0.8rem;
+    }
+    .meta-subject-grid {
+        grid-template-columns: 1fr;
+    }
+    .modal-backdrop {
+        padding: 0.5rem;
+    }
+    .modal-dialog {
+        max-width: 100%;
+        max-height: 92vh;
+        border-radius: 0.6rem;
+    }
+    .modal-header {
+        padding: 0.75rem 1rem;
+    }
+    .modal-body {
+        padding: 1rem 0.85rem;
+        font-size: 0.75rem;
+    }
+    .modal-lead-overview {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Compact Smartphones (<= 480px) */
+@media (max-width: 480px) {
+    .brand-title {
+        font-size: 0.92rem;
+        flex-wrap: wrap;
+    }
+    .brand-subtitle {
+        display: none;
+    }
+    .badge-sim {
+        font-size: 0.62rem;
+        padding: 0.15rem 0.45rem;
+    }
+    .header-actions {
+        grid-template-columns: 1fr 1fr;
+    }
+    .header-actions #resetBtn {
+        grid-column: span 2;
+        border: 1px solid rgba(244, 63, 94, 0.2);
+    }
+    .control-group {
+        grid-template-columns: 1fr;
+    }
+    .control-label {
+        grid-column: span 1;
+    }
+    .closer-decision-stats {
+        grid-template-columns: 1fr;
     }
 }
