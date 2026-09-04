@@ -90,6 +90,8 @@ cp .env.example .env
 
 Project 1.1 includes a dedicated web frontend built with **HTML5, CSS3, and JavaScript** located in [`frontend/`](file:///Users/kalmin/startups/claude-spectra/Track%201%20-%20Autonomous%20AI%20Agents%20&%20Business%20Automation/project-1.1-autonomous-sales-swarm/frontend/) to monitor and control the multi-agent swarm in real time.
 
+> 📖 **Full Specification:** For a comprehensive walkthrough of what the UI does, what every button/action achieves, and a step-by-step breakdown of each simulation phase, read [`UI_SIMULATION_SPECIFICATION.md`](file:///Users/kalmin/startups/claude-spectra/Track%201%20-%20Autonomous%20AI%20Agents%20&%20Business%20Automation/project-1.1-autonomous-sales-swarm/UI_SIMULATION_SPECIFICATION.md).
+
 ### 1. Launch the UI Server
 ```bash
 /Users/kalmin/startups/claude-spectra/.venv/bin/uvicorn api.webhook_server:app --reload --port 8000
