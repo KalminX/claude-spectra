@@ -12,16 +12,18 @@
     <header class="navbar">
         <div class="container navbar-inner">
             <div class="brand-wrapper">
-                <div class="brand-icon">⚡</div>
+                <div class="brand-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                </div>
                 <div>
                     <div class="brand-title">
                         AUTONOMOUS SALES SWARM
                         <span class="badge badge-sim">
-                            <span class="pulse-dot"></span> 100% SIMULATION ENGINE
+                            <span class="status-dot"></span> 100% SIMULATION ENGINE
                         </span>
                     </div>
                     <div class="brand-subtitle">
-                        SkillsVital Voice AI • Zero Real Data • Safe RFC Test Range
+                        SkillsVital Voice AI · RFC Test Range
                     </div>
                 </div>
             </div>
@@ -29,13 +31,13 @@
             <!-- Quick Action Controls -->
             <div class="header-actions">
                 <button onclick="App.stepSimulation()" id="stepBtn" class="btn btn-secondary">
-                    <span>⏭</span> <span class="btn-text">Step Agent</span>
+                    <span class="btn-text">Step Agent</span>
                 </button>
                 <button onclick="App.runFullBatch()" id="runBatchBtn" class="btn btn-primary">
-                    <span>▶</span> <span class="btn-text">Run Full Batch</span>
+                    <span class="btn-text">Run Batch</span>
                 </button>
                 <button onclick="App.resetSimulation()" id="resetBtn" class="btn btn-danger-ghost" title="Clear and Reset Simulation">
-                    <span>🔄</span> <span class="btn-text">Reset</span>
+                    <span class="btn-text">Reset</span>
                 </button>
             </div>
         </div>
@@ -98,7 +100,7 @@
                         <span id="badge-scout" class="badge badge-waiting">READY</span>
                     </div>
                     <div class="agent-name">Lead Scout</div>
-                    <div class="agent-desc">Procedurally generates synthetic contractors, extracts 1-star missed-call reviews & 24/7 claims.</div>
+                    <div class="agent-desc">Generates contractor profiles and extracts missed-call reviews.</div>
                 </div>
                 <div class="agent-stat-footer">
                     <span style="color: var(--text-dim);">Scouted:</span>
@@ -114,7 +116,7 @@
                         <span id="badge-verifier" class="badge badge-waiting">READY</span>
                     </div>
                     <div class="agent-name">Verification Sentry</div>
-                    <div class="agent-desc">ZeroBounce deliverability scoring & Twilio carrier mobile vs landline audit to protect sender domain.</div>
+                    <div class="agent-desc">Audits email deliverability and validates phone carrier type.</div>
                 </div>
                 <div class="agent-stat-footer">
                     <span style="color: var(--text-dim);">Verified:</span>
@@ -130,7 +132,7 @@
                         <span id="badge-personalizer" class="badge badge-waiting">READY</span>
                     </div>
                     <div class="agent-name">ROI Personalizer</div>
-                    <div class="agent-desc">Calculates niche lost revenue ($3k-$6k/mo) & synthesizes custom 3-sentence cold email hooks.</div>
+                    <div class="agent-desc">Calculates lost emergency revenue and drafts 3-sentence hooks.</div>
                 </div>
                 <div class="agent-stat-footer">
                     <span style="color: var(--text-dim);">Hooks:</span>
@@ -146,7 +148,7 @@
                         <span id="badge-closer" class="badge badge-waiting">READY</span>
                     </div>
                     <div class="agent-name">Autonomous Closer</div>
-                    <div class="agent-desc">Dispatches outreach, classifies inbound prospect objections, issues live test line & demo links.</div>
+                    <div class="agent-desc">Dispatches outreach touches and handles inbound prospect objections.</div>
                 </div>
                 <div class="agent-stat-footer">
                     <span style="color: var(--text-dim);">Objections:</span>
@@ -162,7 +164,7 @@
                         <span id="badge-meta_review" class="badge badge-waiting">READY</span>
                     </div>
                     <div class="agent-name">Meta-Reviewer</div>
-                    <div class="agent-desc">Evolutionary loop: clusters objections, isolates friction points, and auto-refactors prompt parameters.</div>
+                    <div class="agent-desc">Clusters objection patterns and refactors prompt parameters.</div>
                 </div>
                 <div class="agent-stat-footer">
                     <span style="color: var(--text-dim);">Demos:</span>
@@ -206,16 +208,16 @@
         <!-- Tabs Navigation -->
         <nav class="tabs-nav">
             <button onclick="App.switchTab('pipeline')" id="tab-pipeline-btn" class="tab-btn active">
-                📋 Simulated Leads Pipeline (<span id="leadsCountTab">0</span>)
+                Leads Pipeline (<span id="leadsCountTab">0</span>)
             </button>
             <button onclick="App.switchTab('closerSandbox')" id="tab-closerSandbox-btn" class="tab-btn">
-                🎯 Agent 4 Closer Sandbox
+                Closer Sandbox
             </button>
             <button onclick="App.switchTab('metaEvolution')" id="tab-metaEvolution-btn" class="tab-btn">
-                🧬 Agent 5 Evolutionary Loop
+                Prompt Optimization
             </button>
             <button onclick="App.switchTab('eventLogs')" id="tab-eventLogs-btn" class="tab-btn">
-                ⚡ Real-Time Activity Log
+                Activity Log
             </button>
         </nav>
 
@@ -236,8 +238,8 @@
                     </thead>
                     <tbody id="leadsTableBody">
                         <tr>
-                            <td colspan="7" style="text-align: center; padding: 2.5rem; color: var(--text-dim);">
-                                Initializing simulated lead directory...
+                            <td colspan="7" style="text-align: center; padding: 1.5rem; color: var(--text-dim);">
+                                No leads in active session. Advance an agent step or run a batch to populate.
                             </td>
                         </tr>
                     </tbody>
@@ -252,10 +254,10 @@
                 <div class="card" style="padding: 1.25rem; display: flex; flex-direction: column; gap: 1rem;">
                     <div style="border-bottom: 1px solid var(--border-color); padding-bottom: 0.75rem;">
                         <h2 style="font-size: 0.95rem; font-weight: 700; color: #fff;">
-                            🎯 Prospect Reply Simulator
+                            Prospect Reply Simulator
                         </h2>
                         <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.2rem;">
-                            Test Agent 4's autonomous intent classification, objection rebuttal, and demo line dispatch.
+                            Test inbound intent classification, objection rebuttal, and demo line dispatch.
                         </p>
                     </div>
 
@@ -285,11 +287,11 @@
                         <label style="display: block; font-size: 0.75rem; font-weight: 600; color: var(--text-muted); margin-bottom: 0.35rem;">
                             Prospect Message:
                         </label>
-                        <textarea id="sandboxMessageInput" rows="4" class="textarea-input" placeholder="What does the contractor say?"></textarea>
+                        <textarea id="sandboxMessageInput" rows="4" class="textarea-input" placeholder="Enter contractor message text..."></textarea>
                     </div>
 
                     <button onclick="App.submitSandboxReply()" id="sandboxSubmitBtn" class="btn btn-primary" style="justify-content: center; width: 100%; padding: 0.6rem;">
-                        Dispatch Inbound Reply & Trigger Closer
+                        Submit Reply
                     </button>
                 </div>
 
@@ -298,17 +300,17 @@
                     <div style="border-bottom: 1px solid var(--border-color); padding-bottom: 0.75rem; display: flex; justify-content: space-between; align-items: center;">
                         <div>
                             <h2 style="font-size: 0.95rem; font-weight: 700; color: #fff;">
-                                🤖 Agent 4 Autonomous Decision
+                                Closer Decision
                             </h2>
                             <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.2rem;">
-                                Live classification confidence, reasoning, and synthesized response.
+                                Classification confidence, reasoning trace, and outbound response.
                             </p>
                         </div>
                         <span id="closerStatusBadge" class="badge badge-waiting">IDLE</span>
                     </div>
 
-                    <div id="closerEmptyState" style="text-align: center; padding: 4rem 1rem; color: var(--text-dim); font-size: 0.8rem;">
-                        Select a contractor on the left and submit a message to inspect Agent 4's autonomous closing logic.
+                    <div id="closerEmptyState" style="text-align: center; padding: 1.5rem 1rem; color: var(--text-dim); font-size: 0.8rem;">
+                        Select a contractor from the left panel and enter a reply to inspect decision logic.
                     </div>
 
                     <div id="closerResultCard" style="display: none; display: flex; flex-direction: column; gap: 0.85rem;">
@@ -318,24 +320,24 @@
                                 <div id="closerIntentVal" style="color: var(--emerald); font-weight: 800; font-family: var(--font-mono); font-size: 0.9rem; margin-top: 0.25rem;">-</div>
                             </div>
                             <div class="card" style="padding: 0.75rem; background: rgba(0,0,0,0.3);">
-                                <div style="font-size: 0.7rem; color: var(--text-dim); font-weight: 600;">CONFIDENCE SCORE</div>
+                                <div style="font-size: 0.7rem; color: var(--text-dim); font-weight: 600;">CONFIDENCE</div>
                                 <div id="closerConfidenceVal" style="color: var(--cyan); font-weight: 800; font-family: var(--font-mono); font-size: 0.9rem; margin-top: 0.25rem;">0%</div>
                             </div>
                         </div>
 
                         <div class="card" style="padding: 0.85rem; background: rgba(0,0,0,0.3);">
-                            <div style="font-size: 0.7rem; color: var(--text-dim); font-weight: 600; margin-bottom: 0.25rem;">AGENT REASONING:</div>
+                            <div style="font-size: 0.7rem; color: var(--text-dim); font-weight: 600; margin-bottom: 0.25rem;">REASONING:</div>
                             <p id="closerReasoningVal" style="color: var(--text-muted); font-size: 0.78rem; line-height: 1.45;">-</p>
                         </div>
 
                         <div class="card" style="padding: 0.75rem; background: rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: space-between;">
-                            <span style="font-size: 0.75rem; color: var(--text-dim); font-weight: 600;">ACTION TAKEN:</span>
+                            <span style="font-size: 0.75rem; color: var(--text-dim); font-weight: 600;">ACTION:</span>
                             <span id="closerActionVal" class="badge badge-active" style="font-family: var(--font-mono);">-</span>
                         </div>
 
                         <div class="card" style="padding: 0.85rem; border-color: rgba(16,185,129,0.3); background: rgba(16,185,129,0.05);">
                             <div style="font-size: 0.72rem; color: var(--emerald); font-weight: 700; margin-bottom: 0.35rem;">
-                                AUTONOMOUS OUTBOUND RESPONSE SENT:
+                                OUTBOUND RESPONSE:
                             </div>
                             <div id="closerResponseMsgVal" style="background: rgba(0,0,0,0.4); padding: 0.75rem; border-radius: 0.4rem; color: var(--text-main); font-size: 0.8rem; line-height: 1.5; white-space: pre-wrap;">-</div>
                         </div>
@@ -344,44 +346,44 @@
             </div>
         </section>
 
-        <!-- TAB 3: Agent 5 Evolutionary Loop -->
+        <!-- TAB 3: Prompt Optimization -->
         <section id="tab-metaEvolution" style="display: none;">
             <div class="card" style="padding: 1.5rem; display: flex; flex-direction: column; gap: 1.25rem;">
                 <div class="meta-header">
                     <div>
                         <h2 style="font-size: 1rem; font-weight: 700; color: #fff;">
-                            🧬 Agent 5: Evolutionary Meta-Reviewer
+                            Prompt Optimization Engine
                         </h2>
                         <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.2rem;">
-                            Continuous self-improvement loop: clusters objection friction and auto-refactors prompt angles.
+                            Clusters objection patterns from recent batches to optimize outreach prompts.
                         </p>
                     </div>
                     <button onclick="App.triggerMetaReview()" id="metaReviewBtn" class="btn btn-indigo">
-                        ⚡ Run Evolutionary Optimization Now
+                        Run Optimization
                     </button>
                 </div>
 
-                <div id="metaReviewEmptyState" style="text-align: center; padding: 3rem 1rem; color: var(--text-dim); font-size: 0.8rem;">
-                    No prompt optimization recorded for this batch yet. Click the button above to execute Agent 5.
+                <div id="metaReviewEmptyState" style="text-align: center; padding: 1.5rem 1rem; color: var(--text-dim); font-size: 0.8rem;">
+                    No optimization run recorded for this batch. Click 'Run Optimization' to analyze performance.
                 </div>
 
                 <div id="metaReviewContent" style="display: none; display: flex; flex-direction: column; gap: 1.25rem;">
                     <div class="card" style="padding: 1rem; background: rgba(0,0,0,0.3);">
-                        <div style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); margin-bottom: 0.35rem;">ANALYSIS SUMMARY:</div>
+                        <div style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); margin-bottom: 0.35rem;">SUMMARY</div>
                         <p id="metaAnalysisSummary" style="color: var(--text-main); font-size: 0.8rem; line-height: 1.5;">-</p>
                     </div>
 
                     <div class="meta-split-grid">
                         <div class="card" style="padding: 1rem; border-color: rgba(244,63,94,0.3); background: rgba(244,63,94,0.05);">
                             <div style="font-size: 0.75rem; font-weight: 700; color: var(--rose); margin-bottom: 0.5rem;">
-                                ⚠️ ISOLATED WEAK PATTERNS:
+                                WEAK PATTERNS:
                             </div>
                             <ul id="metaWeakPatterns" style="padding-left: 1.25rem; color: var(--text-muted); font-size: 0.78rem; display: flex; flex-direction: column; gap: 0.35rem;"></ul>
                         </div>
 
                         <div class="card" style="padding: 1rem; border-color: rgba(16,185,129,0.3); background: rgba(16,185,129,0.05);">
                             <div style="font-size: 0.75rem; font-weight: 700; color: var(--emerald); margin-bottom: 0.35rem;">
-                                📈 PROJECTED CONVERSION GAIN:
+                                PROJECTED GAIN:
                             </div>
                             <div id="metaConversionGain" style="font-size: 1.1rem; font-weight: 800; color: #fff; font-family: var(--font-mono); margin: 0.35rem 0;">-</div>
                             <p style="font-size: 0.72rem; color: var(--text-dim);">Expected reply velocity delta for next batch.</p>
@@ -390,14 +392,14 @@
 
                     <div>
                         <div style="font-size: 0.75rem; font-weight: 700; color: var(--amber); margin-bottom: 0.5rem;">
-                            ✍️ AUTO-REFACTORED SUBJECT LINES:
+                            REFACTORED SUBJECT LINES:
                         </div>
                         <div id="metaSubjectLines" class="meta-subject-grid"></div>
                     </div>
 
                     <div>
                         <div style="font-size: 0.75rem; font-weight: 700; color: var(--cyan); margin-bottom: 0.5rem;">
-                            🎯 ADJUSTED HOOK ANGLES:
+                            REVISED HOOK ANGLES:
                         </div>
                         <div id="metaHookAngles" style="display: flex; flex-direction: column; gap: 0.4rem;"></div>
                     </div>
@@ -410,11 +412,11 @@
             <div class="card" style="padding: 1rem; display: flex; flex-direction: column; gap: 0.75rem;">
                 <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
                     <div style="font-size: 0.85rem; font-weight: 700; color: #fff; display: flex; align-items: center; gap: 0.4rem;">
-                        <span class="pulse-dot"></span> Real-Time Swarm Execution Stream
+                        Activity Log Stream
                     </div>
                 </div>
                 <div id="eventLogContainer" style="background: #060910; border: 1px solid rgba(255,255,255,0.05); border-radius: 0.5rem; padding: 0.85rem; font-family: var(--font-mono); font-size: 0.75rem; max-height: 480px; overflow-y: auto; display: flex; flex-direction: column; gap: 0.35rem;">
-                    <div style="color: var(--text-dim); text-align: center; padding: 2rem;">Awaiting simulation telemetry...</div>
+                    <div style="color: var(--text-dim); text-align: center; padding: 1.5rem;">Awaiting event stream...</div>
                 </div>
             </div>
         </section>

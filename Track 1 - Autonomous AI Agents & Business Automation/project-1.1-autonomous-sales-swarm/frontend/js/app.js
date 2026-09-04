@@ -150,13 +150,13 @@ const App = (() => {
         } catch (err) {
             alert("Simulation step failed: " + err.message);
         } finally {
-            setBusy(false, el.stepBtn, "⏭ Step Agent");
+            setBusy(false, el.stepBtn, "Step Agent");
         }
     }
 
     async function runFullBatch() {
         if (state.isBusy) return;
-        setBusy(true, el.runBatchBtn, "Running 5 Agents...");
+        setBusy(true, el.runBatchBtn, "Running Batch...");
         try {
             const niche = el.simNiche ? el.simNiche.value : "Plumbing";
             const cityParts = el.simCity ? el.simCity.value.split(',') : ["Dallas", "TX"];
@@ -180,7 +180,7 @@ const App = (() => {
         } catch (err) {
             alert("Batch execution failed: " + err.message);
         } finally {
-            setBusy(false, el.runBatchBtn, "▶ Run Full Batch");
+            setBusy(false, el.runBatchBtn, "Run Batch");
         }
     }
 
@@ -253,8 +253,8 @@ const App = (() => {
         if (!leads || leads.length === 0) {
             el.leadsTableBody.innerHTML = `
                 <tr>
-                    <td colspan="7" style="text-align: center; padding: 2rem; color: var(--text-dim);">
-                        No simulated leads in database. Click <strong>Run Full Batch</strong> or <strong>Step Agent</strong> above to begin.
+                    <td colspan="7" style="text-align: center; padding: 1.5rem; color: var(--text-dim);">
+                        No leads in active session. Advance an agent step or run a batch to populate.
                     </td>
                 </tr>
             `;
@@ -340,7 +340,7 @@ const App = (() => {
         const scenario = el.sandboxPresetSelect ? el.sandboxPresetSelect.value : "price_objection";
         const customText = el.sandboxMessageInput ? el.sandboxMessageInput.value : "";
 
-        setBusy(true, el.sandboxSubmitBtn, "Agent 4 Classifying...");
+        setBusy(true, el.sandboxSubmitBtn, "Classifying...");
 
         try {
             const res = await fetch('/api/simulation/closer-reply', {
@@ -360,7 +360,7 @@ const App = (() => {
         } catch (err) {
             alert("Closer processing failed: " + err.message);
         } finally {
-            setBusy(false, el.sandboxSubmitBtn, "Dispatch Inbound Reply & Trigger Closer");
+            setBusy(false, el.sandboxSubmitBtn, "Submit Reply");
         }
     }
 
@@ -392,7 +392,7 @@ const App = (() => {
 
     // --- Meta-Reviewer ---
     async function triggerMetaReview() {
-        setBusy(true, el.metaReviewBtn, "Optimizing Prompts...");
+        setBusy(true, el.metaReviewBtn, "Optimizing...");
         try {
             const res = await fetch('/api/simulation/meta-review', { method: 'POST' });
             if (!res.ok) throw new Error(await res.text());
@@ -400,9 +400,9 @@ const App = (() => {
             renderMetaRefinement(refinement);
             await fetchState();
         } catch (err) {
-            alert("Evolutionary optimization failed: " + err.message);
+            alert("Optimization failed: " + err.message);
         } finally {
-            setBusy(false, el.metaReviewBtn, "⚡ Run Evolutionary Optimization Now");
+            setBusy(false, el.metaReviewBtn, "Run Optimization");
         }
     }
 
@@ -424,7 +424,7 @@ const App = (() => {
         }
         if (el.metaHookAngles) {
             el.metaHookAngles.innerHTML = (r.adjusted_hook_angles || []).map(a => 
-                `<div class="card" style="padding: 0.5rem 0.75rem; color: var(--cyan); font-size: 0.75rem;">→ ${escapeHtml(a)}</div>`
+                `<div class="card" style="padding: 0.5rem 0.75rem; color: var(--cyan); font-size: 0.75rem;">${escapeHtml(a)}</div>`
             ).join('');
         }
     }
